@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding-top: $header-padding-top;
+  padding-bottom: $header-padding-bottom;
+  background-color: $color-bg-light;
+
+  @include tablet-down {
+    padding-bottom: 80px;
+  }
+}

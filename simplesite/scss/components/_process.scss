@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.process {
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+  text-align: center;
+  background-color: $color-bg-light;
+
+  @include mobile-down {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: $section-title-margin-bottom;
+  }
+
+  &__description {
+    @include section-text;
+  }
+}

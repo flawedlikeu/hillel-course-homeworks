@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar" aria-label="Main navigation">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link navbar__link--active">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#workspace" class="navbar__link">Works</a>
+              <ul class="navbar__submenu">
+                <li><a href="#" class="navbar__sublink">Branding</a></li>
+                <li><a href="#" class="navbar__sublink">Web Design</a></li>
+                <li><a href="#" class="navbar__sublink">Illustration</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="#workspace" class="navbar__link">Process</a>
+              <ul class="navbar__submenu">
+                <li><a href="#" class="navbar__sublink">Discovery</a></li>
+                <li><a href="#" class="navbar__sublink">Design</a></li>
+                <li><a href="#" class="navbar__sublink">Delivery</a></li>
+              </ul>
+            </li>
+            <li class="navbar__item">
+              <a href="#workspace" class="navbar__link">Contacts</a>
+              <ul class="navbar__submenu">
+                <li><a href="mailto:hello@example.com" class="navbar__sublink">Email</a></li>
+                <li><a href="#" class="navbar__sublink">Telegram</a></li>
+                <li><a href="#" class="navbar__sublink">Instagram</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="hero">
+          <h1 class="hero__title">Design and Layout</h1>
+          <p class="hero__description">
+            Lorem Ipsum is a placeholder text commonly used in printing and web
+            design. Lorem Ipsum has been the standard dummy text for Latin
+            scripts since the 16th century.
+          </p>
+          <a href="#" class="hero__button">Write to me</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="about" class="about section">
+        <div class="container container--narrow">
+          <h2 class="about__title">About Me</h2>
+          <p class="about__description">
+            Lorem Ipsum is a placeholder text commonly used in printing and web
+            design. Lorem Ipsum has been the standard dummy text for Latin
+            scripts since the 16th century.
+          </p>
+        </div>
+      </section>
+
+      <section class="experience section">
+        <div class="container">
+          <h2 class="visually-hidden">My Experience</h2>
+          <ul class="experience__list">
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+            <li class="experience__item">
+              <img
+                class="experience__icon"
+                src="images/project.svg"
+                alt=""
+                width="50"
+                height="50"
+              />
+              <div class="experience__text">
+                <p class="experience__number">40+</p>
+                <p class="experience__label">projects</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="workspace" class="workspace section">
+        <div class="container">
+          <h2 class="workspace__intro">How I Work</h2>
+
+          <div class="workspace__grid">
+
+            <!-- LEFT: recent works, text only -->
+            <aside class="workspace__col workspace__col--left">
+              <h3 class="workspace__col-title">Recent Works</h3>
+              <ul class="works-list">
+                <li>
+                  <span class="works-list__name">Branding — Coffee House</span>
+                  <span class="works-list__type">Branding</span>
+                </li>
+                <li>
+                  <span class="works-list__name">App — Delivery Service</span>
+                  <span class="works-list__type">Mobile App</span>
+                </li>
+                <li>
+                  <span class="works-list__name">Web Design — Studio</span>
+                  <span class="works-list__type">Website</span>
+                </li>
+                <li>
+                  <span class="works-list__name">Illustration — Magazine</span>
+                  <span class="works-list__type">Illustration</span>
+                </li>
+              </ul>
+            </aside>
+
+            <!-- MAIN: accordion + contact form -->
+            <div class="workspace__col workspace__col--main">
+              <h3 class="workspace__col-title">Working Process</h3>
+
+              <div class="accordion">
+                <details class="accordion__item" open>
+                  <summary>1. Discovery</summary>
+                  <p class="accordion__panel">
+                    We start with a short call to define goals, audience and
+                    scope so the whole team shares the same picture of the
+                    project before any design work begins.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary>2. Concept</summary>
+                  <p class="accordion__panel">
+                    I sketch several directions and moodboards, then narrow
+                    them down together with you into a single concept worth
+                    developing further.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary>3. Design</summary>
+                  <p class="accordion__panel">
+                    The chosen concept turns into detailed layouts, a
+                    component library and a clickable prototype ready for
+                    review and feedback.
+                  </p>
+                </details>
+                <details class="accordion__item">
+                  <summary>4. Delivery</summary>
+                  <p class="accordion__panel">
+                    Final assets, source files and documentation are handed
+                    over, and I stay in touch to support the launch.
+                  </p>
+                </details>
+              </div>
+
+              <h3 class="workspace__col-title">Get in Touch</h3>
+              <form class="form" action="#" method="post">
+                <div class="form__row">
+                  <label for="name" class="form__label">Full Name</label>
+                  <input type="text" id="name" name="name" class="form__input" placeholder="John Smith" required>
+                </div>
+
+                <div class="form__row">
+                  <label for="email" class="form__label">Email Address</label>
+                  <input type="email" id="email" name="email" class="form__input" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="form__row">
+                  <label for="phone" class="form__label">Phone Number</label>
+                  <div class="form__phone-group">
+                    <select id="phone-code" name="phone_code" class="form__select form__select--code" aria-label="Country code">
+                      <option value="+380" selected>Ukraine (+380)</option>
+                      <option value="+1">USA (+1)</option>
+                      <option value="+44">United Kingdom (+44)</option>
+                      <option value="+49">Germany (+49)</option>
+                      <option value="+48">Poland (+48)</option>
+                      <option value="+33">France (+33)</option>
+                      <option value="+420">Czechia (+420)</option>
+                      <option value="+90">Turkey (+90)</option>
+                    </select>
+                    <input type="tel" id="phone" name="phone" class="form__input" placeholder="00 000 0000">
+                  </div>
+                </div>
+
+                <div class="form__row">
+                  <label for="budget" class="form__label">Project Budget</label>
+                  <select id="budget" name="budget" class="form__select">
+                    <option value="small">Under $1,000</option>
+                    <option value="medium">$1,000 – $3,000</option>
+                    <option value="large">$3,000+</option>
+                  </select>
+                </div>
+
+                <div class="form__row">
+                  <label for="message" class="form__label">Project Description</label>
+                  <textarea id="message" name="message" class="form__textarea" rows="4" placeholder="Briefly describe your project"></textarea>
+                </div>
+
+                <div class="form__row form__row--checkbox">
+                  <input type="checkbox" id="agree" name="agree" required>
+                  <label for="agree" class="form__label">I agree to the processing of my personal data</label>
+                </div>
+
+                <div class="form__actions">
+                  <button type="submit" class="form__button form__button--primary">Send</button>
+                  <button type="reset" class="form__button form__button--secondary">Reset</button>
+                </div>
+              </form>
+            </div>
+
+            <aside class="workspace__col workspace__col--right">
+              <h3 class="sidebar__title">Skills</h3>
+              <ul class="sidebar__skills">
+                <li>Branding</li>
+                <li>UI / UX</li>
+                <li>Figma</li>
+                <li>Illustration</li>
+                <li>Prototyping</li>
+              </ul>
+              <blockquote class="sidebar__quote">
+                "Great design is not just what it looks like — it's how it
+                works." A principle I follow in every project.
+              </blockquote>
+            </aside>
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <h3 class="footer__title">Ostap Ivanenko</h3>
+            <p class="footer__lead">
+              Freelance designer helping brands turn ideas into clear,
+              usable interfaces.
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <p class="footer__heading">Navigate</p>
+            <ul class="footer__nav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#workspace">Works</a></li>
+              <li><a href="#workspace">Contacts</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <p class="footer__heading">Follow</p>
+            <ul class="footer__social">
+              <li><a href="#">Behance</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Telegram</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">© 2026. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

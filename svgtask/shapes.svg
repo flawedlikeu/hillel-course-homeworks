@@ -1,0 +1,40 @@
+<svg width="700" height="200" viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes pulseColors {
+      0% {
+        fill: #ffcc00;
+        stroke: #ff6b6b;
+      }
+      33% {
+        fill: #6bffb8;
+        stroke: #2f80ed;
+      }
+      66% {
+        fill: #b86bff;
+        stroke: #ffcc00;
+      }
+      100% {
+        fill: #ffcc00;
+        stroke: #ff6b6b;
+      }
+    }
+
+    .animated-shape {
+      fill: #ffcc00;
+      stroke: #ff6b6b;
+      animation: pulseColors 4s ease-in-out infinite;
+    }
+  </style>
+
+  <rect x="25" y="25" width="120" height="120"
+        fill="#ff6b6b" stroke="#4a1616" stroke-width="5" />
+
+  <rect x="195" y="45" width="150" height="80"
+        fill="#2f80ed" stroke="#0b2c5c" stroke-width="5" />
+
+  <circle cx="450" cy="85" r="60"
+          fill="#6bffb8" stroke="#0f5c33" stroke-width="5" />
+
+  <ellipse class="animated-shape" cx="600" cy="85" rx="65" ry="40"
+           stroke-width="5" />
+</svg>

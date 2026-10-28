@@ -1,0 +1,44 @@
+@use "../abstracts" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: $container-narrow-width;
+
+  @include tablet-down {
+    align-items: center;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: $hero-title-margin-bottom;
+    margin-left: -2px;
+  }
+
+  &__description {
+    margin-bottom: $hero-description-margin-bottom;
+    @include section-text;
+  }
+
+  &__button {
+    @include flex-center;
+    min-width: $button-min-width;
+    min-height: $button-min-height;
+    padding: 0.5em;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $color-primary;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.9;
+    }
+
+    @include mobile-down {
+      width: 100%;
+    }
+  }
+}

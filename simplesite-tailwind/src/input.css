@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- CSS Custom Properties: single source of truth for design tokens ---- */
+@layer base {
+  :root {
+    --color-primary: #34547a;
+    --color-bg-light: #edeef0;
+    --color-text-muted: #727272;
+    --container-width: 1110px;
+    --container-narrow-width: 540px;
+  }
+}
+
+@layer components {
+  /* Named-area CSS Grid for the workspace section: collapses left/main/right
+     exactly the way the original simplesite project did. */
+  .workspace-grid {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "main" "left" "right";
+  }
+  @media (min-width: 640px) {
+    .workspace-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "main main" "left right";
+    }
+  }
+  @media (min-width: 1024px) {
+    .workspace-grid {
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "left main right";
+    }
+  }
+  .area-left {
+    grid-area: left;
+  }
+  .area-main {
+    grid-area: main;
+  }
+  .area-right {
+    grid-area: right;
+  }
+
+  /* Accordion +/- marker driven purely by the <details> "open" state, no JS */
+  details > summary {
+    list-style: none;
+    cursor: pointer;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details > summary::after {
+    content: "+";
+    float: right;
+    color: var(--color-primary);
+    font-size: 1.25rem;
+  }
+  details[open] > summary::after {
+    content: "\2013";
+  }
+
+  .navbar__item:hover .navbar__submenu,
+  .navbar__item:focus-within .navbar__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}

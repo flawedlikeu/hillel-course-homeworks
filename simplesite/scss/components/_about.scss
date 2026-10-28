@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.about {
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+  text-align: center;
+
+  @include mobile-down {
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  &__title {
+    margin-bottom: $section-title-margin-bottom;
+  }
+
+  &__description {
+    @include section-text;
+  }
+}

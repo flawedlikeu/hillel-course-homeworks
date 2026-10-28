@@ -1,0 +1,13 @@
+{
+  "name": "simple-site-uk-en",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple Site UK-EN — portfolio landing page from Figma",
+  "scripts": {
+    "build:css": "sass scss/main.scss css/styles.css --style=expanded",
+    "watch:css": "sass scss/main.scss css/styles.css --watch --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

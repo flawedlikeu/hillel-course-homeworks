@@ -1,0 +1,15 @@
+@use "../abstracts" as *;
+
+.video {
+  margin-top: -40px;
+  padding-bottom: $section-padding-top;
+  background-color: $color-bg-light;
+
+  &__iframe {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    border: 0;
+    aspect-ratio: 16 / 9;
+  }
+}

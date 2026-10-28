@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding-top: $footer-padding-top;
+  padding-bottom: $footer-padding-bottom;
+  color: $color-white;
+  background-color: $color-primary;
+
+  &__title {
+    margin-bottom: $footer-title-margin-bottom;
+    letter-spacing: $letter-spacing-body;
+    font-weight: $font-weight-regular;
+  }
+
+  &__copyright {
+    color: $color-footer-text;
+    line-height: $line-height-footer;
+  }
+}

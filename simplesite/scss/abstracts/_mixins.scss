@@ -1,0 +1,38 @@
+@use "variables" as *;
+
+@mixin tablet-down {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin mobile-down {
+  @media (max-width: $breakpoint-mobile) {
+    @content;
+  }
+}
+
+@mixin min-width-down {
+  @media (max-width: $breakpoint-min) {
+    @content;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-text {
+  letter-spacing: $letter-spacing-body;
+  color: $color-text-muted;
+  line-height: $line-height-base;
+}
+
+@mixin interactive-link {
+  &:hover,
+  &:focus {
+    color: $color-primary;
+  }
+}

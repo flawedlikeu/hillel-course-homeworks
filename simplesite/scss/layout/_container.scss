@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+.container {
+  width: min(100% - $container-padding * 2, $container-width);
+  margin-inline: auto;
+
+  &--narrow {
+    width: min(100% - $container-padding * 2, $container-narrow-width);
+    margin-inline: auto;
+  }
+}
+
+@include min-width-down {
+  .container,
+  .container--narrow {
+    width: min(100% - 32px, $container-width);
+  }
+}

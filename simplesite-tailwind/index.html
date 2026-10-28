@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="m-0 text-black font-sans text-base leading-[1.64]">
+
+  <header class="flex flex-col pt-[69px] pb-[80px] lg:pb-[141px] bg-bglight">
+    <div class="w-[min(100%-40px,1110px)] mx-auto">
+
+      <nav class="mb-[50px] lg:mb-[162px]" aria-label="Main navigation">
+        <ul class="flex flex-wrap gap-5 -ml-3 justify-center lg:justify-start">
+          <li class="navbar__item relative">
+            <a href="#" class="block py-2 px-3 uppercase tracking-[0.125em] text-primary font-medium">Home</a>
+          </li>
+          <li class="navbar__item relative">
+            <a href="#about" class="block py-2 px-3 uppercase tracking-[0.125em] hover:text-primary">About</a>
+          </li>
+          <li class="navbar__item relative">
+            <a href="#workspace" class="block py-2 px-3 uppercase tracking-[0.125em] hover:text-primary">Works</a>
+            <ul class="navbar__submenu static lg:absolute top-full left-3 z-20 min-w-[180px] mt-0 lg:mt-1.5 py-2.5 bg-transparent lg:bg-white text-center lg:text-left shadow-none lg:shadow-[0_16px_32px_rgba(0,0,0,0.12)] opacity-100 lg:opacity-0 visible lg:invisible translate-y-0 lg:-translate-y-0 transition-all duration-200">
+              <li><a href="#" class="block py-1.5 px-5 lg:px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Branding</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Web Design</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Illustration</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item relative">
+            <a href="#workspace" class="block py-2 px-3 uppercase tracking-[0.125em] hover:text-primary">Process</a>
+            <ul class="navbar__submenu static lg:absolute top-full left-3 z-20 min-w-[180px] mt-0 lg:mt-1.5 py-2.5 bg-transparent lg:bg-white text-center lg:text-left shadow-none lg:shadow-[0_16px_32px_rgba(0,0,0,0.12)] opacity-100 lg:opacity-0 visible lg:invisible translate-y-0 lg:-translate-y-0 transition-all duration-200">
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Discovery</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Design</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Delivery</a></li>
+            </ul>
+          </li>
+          <li class="navbar__item relative">
+            <a href="#workspace" class="block py-2 px-3 uppercase tracking-[0.125em] hover:text-primary">Contacts</a>
+            <ul class="navbar__submenu static lg:absolute top-full left-3 z-20 min-w-[180px] mt-0 lg:mt-1.5 py-2.5 bg-transparent lg:bg-white text-center lg:text-left shadow-none lg:shadow-[0_16px_32px_rgba(0,0,0,0.12)] opacity-100 lg:opacity-0 visible lg:invisible translate-y-0 lg:-translate-y-0 transition-all duration-200">
+              <li><a href="mailto:hello@example.com" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Email</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Telegram</a></li>
+              <li><a href="#" class="block py-1.5 px-5 text-muted lg:text-black tracking-[0.03125em] hover:text-primary">Instagram</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left max-w-[540px] mx-auto lg:mx-0">
+        <h1 class="text-[2.25rem] min-[376px]:text-5xl font-medium leading-[1.4] mb-[60px] -ml-0.5">Design and Layout</h1>
+        <p class="text-muted tracking-[0.03125em] leading-[1.64] mb-[65px]">
+          Lorem Ipsum is a placeholder text commonly used in printing and web
+          design. Lorem Ipsum has been the standard dummy text for Latin
+          scripts since the 16th century.
+        </p>
+        <a href="#" class="flex items-center justify-center w-full sm:w-auto min-w-[225px] min-h-[65px] px-4 uppercase text-white bg-primary hover:opacity-90 transition-opacity">Write to me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="about" class="pt-[80px] lg:pt-[110px] pb-[70px] lg:pb-[90px] text-center">
+      <div class="w-[min(100%-40px,540px)] mx-auto">
+        <h2 class="text-[1.75rem] lg:text-[2rem] font-medium leading-[1.4] mb-[35px]">About Me</h2>
+        <p class="text-muted tracking-[0.03125em] leading-[1.64]">
+          Lorem Ipsum is a placeholder text commonly used in printing and web
+          design. Lorem Ipsum has been the standard dummy text for Latin
+          scripts since the 16th century.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-[100px] text-white bg-primary">
+      <div class="w-[min(100%-40px,1110px)] mx-auto">
+        <h2 class="sr-only">My Experience</h2>
+        <ul class="flex flex-col items-center sm:flex-row sm:flex-wrap sm:justify-between lg:justify-between sm:justify-evenly gap-10">
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+          <li class="flex items-center gap-5">
+            <img src="images/project.svg" alt="" width="50" height="50" class="shrink-0" />
+            <div class="flex flex-col justify-between tracking-[0.03125em] leading-[1.64]">
+              <p class="text-[1.3125rem] font-medium">40+</p>
+              <p>projects</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="workspace" class="pt-[80px] lg:pt-[110px] pb-[70px] lg:pb-[90px] bg-white">
+      <div class="w-[min(100%-40px,1110px)] mx-auto">
+        <h2 class="text-center text-[1.75rem] lg:text-[2rem] font-medium leading-[1.4] mb-[35px]">How I Work</h2>
+
+        <!-- CSS Grid with named areas: left / main / right, collapsing per breakpoint -->
+        <div class="workspace-grid">
+
+          <!-- LEFT: recent works, text only -->
+          <aside class="area-left p-[30px] rounded bg-bglight">
+            <h3 class="text-2xl font-normal mb-3">Recent Works</h3>
+            <ul class="flex flex-col gap-4">
+              <li class="flex flex-col gap-0.5 pb-4 border-b border-[#d7dbe1]">
+                <span class="tracking-[0.03125em] font-medium">Branding — Coffee House</span>
+                <span class="text-muted text-sm">Branding</span>
+              </li>
+              <li class="flex flex-col gap-0.5 pb-4 border-b border-[#d7dbe1]">
+                <span class="tracking-[0.03125em] font-medium">App — Delivery Service</span>
+                <span class="text-muted text-sm">Mobile App</span>
+              </li>
+              <li class="flex flex-col gap-0.5 pb-4 border-b border-[#d7dbe1]">
+                <span class="tracking-[0.03125em] font-medium">Web Design — Studio</span>
+                <span class="text-muted text-sm">Website</span>
+              </li>
+              <li class="flex flex-col gap-0.5">
+                <span class="tracking-[0.03125em] font-medium">Illustration — Magazine</span>
+                <span class="text-muted text-sm">Illustration</span>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- MAIN: accordion + contact form -->
+          <div class="area-main p-[30px] rounded bg-white border border-bglight">
+            <h3 class="text-2xl font-normal mb-3">Working Process</h3>
+
+            <div>
+              <details class="border-b border-bglight py-[18px] pt-0" open>
+                <summary class="font-medium tracking-[0.03125em] pr-8">1. Discovery</summary>
+                <p class="mt-3 text-muted tracking-[0.03125em] leading-[1.64]">
+                  We start with a short call to define goals, audience and
+                  scope so the whole team shares the same picture of the
+                  project before any design work begins.
+                </p>
+              </details>
+              <details class="border-b border-bglight py-[18px]">
+                <summary class="font-medium tracking-[0.03125em] pr-8">2. Concept</summary>
+                <p class="mt-3 text-muted tracking-[0.03125em] leading-[1.64]">
+                  I sketch several directions and moodboards, then narrow
+                  them down together with you into a single concept worth
+                  developing further.
+                </p>
+              </details>
+              <details class="border-b border-bglight py-[18px]">
+                <summary class="font-medium tracking-[0.03125em] pr-8">3. Design</summary>
+                <p class="mt-3 text-muted tracking-[0.03125em] leading-[1.64]">
+                  The chosen concept turns into detailed layouts, a
+                  component library and a clickable prototype ready for
+                  review and feedback.
+                </p>
+              </details>
+              <details class="py-[18px] pb-0">
+                <summary class="font-medium tracking-[0.03125em] pr-8">4. Delivery</summary>
+                <p class="mt-3 text-muted tracking-[0.03125em] leading-[1.64]">
+                  Final assets, source files and documentation are handed
+                  over, and I stay in touch to support the launch.
+                </p>
+              </details>
+            </div>
+
+            <h3 class="text-2xl font-normal mb-3 mt-8">Get in Touch</h3>
+            <form class="mt-[35px]" action="#" method="post">
+              <div class="flex flex-col gap-1.5 mb-[18px]">
+                <label for="name" class="tracking-[0.03125em] font-medium">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="John Smith" required
+                  class="py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1" />
+              </div>
+
+              <div class="flex flex-col gap-1.5 mb-[18px]">
+                <label for="email" class="tracking-[0.03125em] font-medium">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required
+                  class="py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1" />
+              </div>
+
+              <div class="flex flex-col gap-1.5 mb-[18px]">
+                <label for="phone" class="tracking-[0.03125em] font-medium">Phone Number</label>
+                <div class="flex flex-wrap gap-2">
+                  <select id="phone-code" name="phone_code" aria-label="Country code"
+                    class="flex-none w-[150px] py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1">
+                    <option value="+380" selected>Ukraine (+380)</option>
+                    <option value="+1">USA (+1)</option>
+                    <option value="+44">United Kingdom (+44)</option>
+                    <option value="+49">Germany (+49)</option>
+                    <option value="+48">Poland (+48)</option>
+                    <option value="+33">France (+33)</option>
+                    <option value="+420">Czechia (+420)</option>
+                    <option value="+90">Turkey (+90)</option>
+                  </select>
+                  <input type="tel" id="phone" name="phone" placeholder="00 000 0000"
+                    class="flex-1 min-w-[140px] py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1" />
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-1.5 mb-[18px]">
+                <label for="budget" class="tracking-[0.03125em] font-medium">Project Budget</label>
+                <select id="budget" name="budget"
+                  class="py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1">
+                  <option value="small">Under $1,000</option>
+                  <option value="medium">$1,000 – $3,000</option>
+                  <option value="large">$3,000+</option>
+                </select>
+              </div>
+
+              <div class="flex flex-col gap-1.5 mb-[18px]">
+                <label for="message" class="tracking-[0.03125em] font-medium">Project Description</label>
+                <textarea id="message" name="message" rows="4" placeholder="Briefly describe your project"
+                  class="py-3 px-3.5 border border-[#d7dbe1] rounded-sm bg-bglight text-base resize-y focus:bg-white focus:outline focus:outline-2 focus:outline-primary focus:outline-offset-1"></textarea>
+              </div>
+
+              <div class="flex flex-row items-center gap-1.5 mb-[18px]">
+                <input type="checkbox" id="agree" name="agree" required />
+                <label for="agree" class="tracking-[0.03125em] font-medium">I agree to the processing of my personal data</label>
+              </div>
+
+              <div class="flex flex-wrap gap-4 mt-1.5">
+                <button type="submit"
+                  class="flex items-center justify-center min-w-[160px] min-h-[52px] px-4 uppercase border border-primary text-white bg-primary hover:opacity-90 transition-opacity cursor-pointer">Send</button>
+                <button type="reset"
+                  class="flex items-center justify-center min-w-[160px] min-h-[52px] px-4 uppercase border border-primary text-primary bg-transparent hover:bg-bglight transition-colors cursor-pointer">Reset</button>
+              </div>
+            </form>
+          </div>
+
+          <aside class="area-right p-[30px] rounded bg-bglight">
+            <h3 class="text-xl font-normal mb-3">Skills</h3>
+            <ul class="flex flex-wrap gap-2 mb-7">
+              <li class="py-1.5 px-3.5 border border-primary/25 rounded-full bg-white tracking-[0.03125em] text-sm">Branding</li>
+              <li class="py-1.5 px-3.5 border border-primary/25 rounded-full bg-white tracking-[0.03125em] text-sm">UI / UX</li>
+              <li class="py-1.5 px-3.5 border border-primary/25 rounded-full bg-white tracking-[0.03125em] text-sm">Figma</li>
+              <li class="py-1.5 px-3.5 border border-primary/25 rounded-full bg-white tracking-[0.03125em] text-sm">Illustration</li>
+              <li class="py-1.5 px-3.5 border border-primary/25 rounded-full bg-white tracking-[0.03125em] text-sm">Prototyping</li>
+            </ul>
+            <blockquote class="m-0 py-4 px-[18px] border-l-[3px] border-primary bg-white text-muted italic leading-[1.64]">
+              "Great design is not just what it looks like — it's how it
+              works." A principle I follow in every project.
+            </blockquote>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pt-[39px] pb-10 bg-primary text-bglight leading-[1.4]">
+    <div class="w-[min(100%-40px,1110px)] mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-8">
+        <div>
+          <h3 class="text-lg font-medium mb-3">Ostap Ivanenko</h3>
+          <p>Freelance designer helping brands turn ideas into clear, usable interfaces.</p>
+        </div>
+        <div>
+          <p class="font-medium mb-3">Navigate</p>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#about" class="hover:opacity-80">About</a></li>
+            <li><a href="#workspace" class="hover:opacity-80">Works</a></li>
+            <li><a href="#workspace" class="hover:opacity-80">Contacts</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-medium mb-3">Follow</p>
+          <ul class="flex flex-col gap-2">
+            <li><a href="#" class="hover:opacity-80">Behance</a></li>
+            <li><a href="#" class="hover:opacity-80">Instagram</a></li>
+            <li><a href="#" class="hover:opacity-80">Telegram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-6 border-t border-white/15">
+        <p>© 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
