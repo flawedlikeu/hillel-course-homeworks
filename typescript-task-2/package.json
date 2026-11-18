@@ -1,0 +1,14 @@
+{
+  "name": "typescript-task-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hillel homework #20: interfaces, decorators, namespaces",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
