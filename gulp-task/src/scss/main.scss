@@ -1,0 +1,6 @@
+// Точка входу стилів: Gulp компілює цей файл у dist/css/style.css та style.min.css
+@use 'base/reset';
+@use 'components/header';
+@use 'components/hero';
+@use 'components/features';
+@use 'components/footer';

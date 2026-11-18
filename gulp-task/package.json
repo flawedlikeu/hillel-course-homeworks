@@ -1,0 +1,35 @@
+{
+  "name": "gulp-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hillel homework: front-end build with Gulp (SCSS, BrowserSync, Autoprefixer, Prettier, Stylelint, cssnano)",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "dev": "gulp",
+    "build": "gulp build",
+    "lint": "gulp lint",
+    "format": "gulp format"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.5%",
+    "not dead"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.6.2",
+    "browser-sync": "^3.0.4",
+    "cssnano": "^9.9.0",
+    "del": "^9.0.1",
+    "gulp": "^5.0.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.1.0",
+    "gulp-sass": "^6.0.1",
+    "postcss-reporter": "^7.1.0",
+    "postcss-scss": "^4.0.9",
+    "prettier": "^3.10.1",
+    "sass": "^1.108.2",
+    "stylelint": "^18.0.0",
+    "stylelint-config-standard-scss": "^18.0.0"
+  }
+}

@@ -1,0 +1,44 @@
+@use '../abstracts' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  background: rgba($color-bg, 0.8);
+  border-bottom: 1px solid rgba($color-muted, 0.15);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  &__logo {
+    font-weight: 800;
+    font-size: 1.25rem;
+
+    span {
+      color: $color-accent;
+    }
+  }
+
+  &__nav {
+    display: none;
+    gap: 24px;
+
+    @include media(tablet) {
+      display: flex;
+    }
+
+    a {
+      color: $color-muted;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+}

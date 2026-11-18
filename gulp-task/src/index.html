@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulp Starter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <a href="#" class="header__logo">Gulp<span>Starter</span></a>
+        <nav class="header__nav">
+          <a href="#features">Можливості</a>
+          <a href="#how">Як запустити</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Автоматизація фронтенду з Gulp</h1>
+          <p class="hero__text">
+            Цю сторінку зібрано за допомогою Gulp: SCSS компілюється в CSS, отримує вендорні
+            префікси, форматується та мінімізується, а браузер оновлюється автоматично під час
+            розробки.
+          </p>
+          <a href="#features" class="hero__btn">Що вміє збірка</a>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="features__title">Можливості</h2>
+          <div class="features__grid">
+            <article class="card">
+              <div class="card__icon">🎨</div>
+              <h3 class="card__title">SCSS</h3>
+              <p class="card__text">
+                Змінні, міксини, вкладеність і модулі <code>@use</code> компілюються в CSS через
+                <code>gulp-sass</code>.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon">⚡</div>
+              <h3 class="card__title">Live reload</h3>
+              <p class="card__text">
+                <code>browser-sync</code> підставляє нові стилі без перезавантаження і оновлює
+                сторінку при зміні HTML.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon">🌐</div>
+              <h3 class="card__title">Вендорні префікси</h3>
+              <p class="card__text">
+                <code>autoprefixer</code> додає префікси згідно з <code>browserslist</code> у
+                package.json.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon">✨</div>
+              <h3 class="card__title">Стайлінг коду</h3>
+              <p class="card__text">
+                <code>stylelint</code> перевіряє вихідний SCSS, <code>prettier</code> форматує як
+                базовий код, так і кінцевий CSS.
+              </p>
+            </article>
+            <article class="card">
+              <div class="card__icon">📦</div>
+              <h3 class="card__title">Мінімізація</h3>
+              <p class="card__text">
+                <code>cssnano</code> створює <code>style.min.css</code> без пробілів і коментарів.
+              </p>
+            </article>
+            <article class="card" id="how">
+              <div class="card__icon">🚀</div>
+              <h3 class="card__title">Запуск</h3>
+              <p class="card__text">
+                <code>npm install</code>, потім <code>npm start</code> для розробки або
+                <code>npm run build</code> для збірки.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Hillel · Домашнє завдання: Gulp</div>
+    </footer>
+  </body>
+</html>

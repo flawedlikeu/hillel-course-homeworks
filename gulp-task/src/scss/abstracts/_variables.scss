@@ -1,0 +1,17 @@
+$color-bg: #0f172a;
+$color-surface: #1e293b;
+$color-text: #e2e8f0;
+$color-muted: #94a3b8;
+$color-accent: #eb4a4b;
+$color-accent-2: #f59e0b;
+$radius: 16px;
+$container: 1100px;
+$font-main:
+  'Inter',
+  system-ui,
+  -apple-system,
+  sans-serif;
+$breakpoints: (
+  tablet: 768px,
+  desktop: 1024px,
+);
