@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин — Продукти</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img class="logo__img" src="../images/logo.svg" alt="" width="32" height="32" />
+      MiniShop
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link nav__link--active">Продукти</a>
+      <a href="cart.html" class="nav__link">
+        Кошик <span class="badge" data-cart-count>0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__title">Усе потрібне — в одному місці</h1>
+        <p class="hero__text">Електроніка, одяг, книги та товари для дому з доставкою по Україні.</p>
+      </div>
+    </section>
+
+    <h2 class="page-title">Продукти</h2>
+
+    <form class="filters" id="filters" autocomplete="off">
+      <input type="search" name="search" class="input" placeholder="Пошук за назвою..." />
+
+      <select name="category" class="input">
+        <option value="all">Усі категорії</option>
+      </select>
+
+      <input type="number" name="minPrice" class="input input--short" placeholder="Ціна від" min="0" />
+      <input type="number" name="maxPrice" class="input input--short" placeholder="Ціна до" min="0" />
+
+      <select name="sort" class="input">
+        <option value="default">Без сортування</option>
+        <option value="price-asc">Ціна: за зростанням</option>
+        <option value="price-desc">Ціна: за спаданням</option>
+        <option value="title-asc">Назва: А → Я</option>
+        <option value="rating-desc">Рейтинг: спочатку кращі</option>
+      </select>
+
+      <button type="reset" class="btn btn--ghost">Скинути</button>
+    </form>
+
+    <p class="results-info" id="results-info"></p>
+    <div class="grid" id="products"></div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+
+</html>

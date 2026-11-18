@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин — Кошик</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img class="logo__img" src="../images/logo.svg" alt="" width="32" height="32" />
+      MiniShop
+    </a>
+    <nav class="nav">
+      <a href="index.html" class="nav__link">Продукти</a>
+      <a href="cart.html" class="nav__link nav__link--active">
+        Кошик <span class="badge" data-cart-count>0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Кошик</h1>
+
+    <div class="empty empty--cart" id="cart-empty" hidden>
+      <img class="empty__img" src="../images/empty-cart.svg" alt="" width="220" height="180" />
+      <p>Кошик порожній</p>
+      <a href="index.html" class="btn btn--primary">До покупок</a>
+    </div>
+
+    <div class="cart" id="cart">
+      <ul class="cart__list" id="cart-list"></ul>
+
+      <aside class="summary" id="summary" hidden>
+        <h2 class="summary__title">Разом</h2>
+        <div class="summary__row">
+          <span>Товарів:</span>
+          <strong id="total-count">0</strong>
+        </div>
+        <div class="summary__row summary__row--total">
+          <span>Сума:</span>
+          <strong id="total-price">0</strong>
+        </div>
+        <button class="btn btn--danger btn--block" id="clear-cart">Очистити кошик</button>
+      </aside>
+    </div>
+  </main>
+</body>
+
+</html>
