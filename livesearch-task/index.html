@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LiveSearch — пошук серіалів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">📺 Пошук серіалів</h1>
+    <p class="header__subtitle">Результати з'являються одразу під час введення (TVMaze API)</p>
+
+    <div class="search">
+      <input
+        id="search-input"
+        class="search__input"
+        type="search"
+        placeholder="Почніть вводити назву, напр. «office»"
+        autocomplete="off"
+        aria-label="Пошук серіалів"
+      >
+      <span id="spinner" class="search__spinner" hidden></span>
+    </div>
+  </header>
+
+  <main class="container">
+    <p id="status" class="status" role="status" aria-live="polite">Введіть щонайменше 2 символи</p>
+    <ul id="results" class="results"></ul>
+  </main>
+
+  <script defer src="main.js"></script>
+</body>
+</html>
