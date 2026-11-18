@@ -1,0 +1,52 @@
+{
+  "name": "webpack-advanced",
+  "version": "1.0.0",
+  "description": "Hillel homework: MiniShop with advanced Webpack config (TS, Babel, SCSS, LESS, ESLint, DevServer, Bundle Analyzer)",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "analyze": "webpack --mode production --env analyze",
+    "lint": "eslint src webpack.config.js",
+    "lint:fix": "eslint src webpack.config.js --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.1.2",
+    "@babel/preset-env": "^8.0.7",
+    "@eslint/js": "^10.0.1",
+    "@types/lodash-es": "^4.17.12",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.5",
+    "css-minimizer-webpack-plugin": "^8.0.0",
+    "eslint": "^10.15.0",
+    "eslint-webpack-plugin": "^6.0.0",
+    "globals": "^17.14.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.8",
+    "less": "^4.9.1",
+    "less-loader": "^13.1.0",
+    "mini-css-extract-plugin": "^2.10.2",
+    "sass": "^1.108.2",
+    "sass-loader": "^17.1.0",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.6.1",
+    "ts-loader": "^9.6.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.73.0",
+    "webpack": "^5.112.2",
+    "webpack-bundle-analyzer": "^5.4.3",
+    "webpack-cli": "^7.3.1",
+    "webpack-dev-server": "^6.1.0"
+  },
+  "dependencies": {
+    "lodash-es": "^4.18.1",
+    "modern-normalize": "^3.0.1"
+  },
+  "private": true,
+  "browserslist": [
+    "last 2 versions",
+    "> 0.5%",
+    "not dead"
+  ]
+}
