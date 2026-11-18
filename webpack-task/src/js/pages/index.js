@@ -1,5 +1,3 @@
-// Іменовані імпорти з lodash-es: завдяки tree-shaking у збірку
-// потрапляють лише debounce та orderBy, а не вся бібліотека (~70 КБ)
 import { debounce, orderBy } from 'lodash-es';
 import { products, categories } from '../modules/mock-data';
 import { addToCart } from '../modules/cart-store';
@@ -102,13 +100,11 @@ grid.addEventListener('click', (event) => {
   showToast(`«${product.title}» додано в кошик`);
 });
 
-// Пошук та ціни — з debounce, щоб не перемальовувати сітку на кожен символ
 form.addEventListener('input', debounce(render, 250));
 form.addEventListener('change', render);
 form.addEventListener('reset', () => setTimeout(render));
 form.addEventListener('submit', (e) => e.preventDefault());
 
-// Синхронізація лічильника, якщо кошик змінили в іншій вкладці
 window.addEventListener('storage', updateCartBadge);
 
 fillCategories();

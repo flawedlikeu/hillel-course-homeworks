@@ -1,5 +1,3 @@
-// Спільні для обох сторінок стилі та UI-хелпери.
-// Оскільки модуль імпортується з обох entry, webpack винесе його в common-чанк
 import '../../css/fonts.css';
 import '../../css/styles.css';
 import { getCartCount } from './cart-store';
@@ -31,7 +29,6 @@ export function showToast(message) {
   toastTimer = setTimeout(() => toast.classList.remove('toast--visible'), 2000);
 }
 
-// Безпечне створення елемента без innerHTML
 export function el(tag, className, text) {
   const node = document.createElement(tag);
   if (className) node.className = className;

@@ -1,4 +1,3 @@
-// Кошик зберігається в localStorage у вигляді { [productId]: qty }
 const STORAGE_KEY = 'minishop-cart';
 
 function read() {

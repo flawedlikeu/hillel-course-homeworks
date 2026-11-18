@@ -8,11 +8,8 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 module.exports = (env = {}, argv = {}) => {
   const isProd = argv.mode === 'production';
 
-  // Хешування імен файлів: у production додаємо [contenthash],
-  // щоб браузер підтягував новий файл лише коли змінився його вміст
   const hash = isProd ? '.[contenthash:8]' : '';
 
-  // Кожна сторінка — окрема точка входу і окремий HTML
   const pages = [
     { name: 'index' },
     { name: 'cart' },
@@ -31,18 +28,16 @@ module.exports = (env = {}, argv = {}) => {
       filename: `js/[name]${hash}.js`,
       chunkFilename: `js/[name]${hash}.chunk.js`,
       assetModuleFilename: `assets/[name]${hash}[ext]`,
-      clean: true, // очищення dist перед кожною збіркою
+      clean: true,
     },
 
     module: {
       rules: [
-        // HTML: html-loader підхоплює <img src> і <link rel="icon">
         {
           test: /\.html$/i,
           loader: 'html-loader',
         },
 
-        // CSS: у dev — через <style> (швидко), у prod — окремий .css файл
         {
           test: /\.css$/i,
           use: [
@@ -51,8 +46,6 @@ module.exports = (env = {}, argv = {}) => {
           ],
         },
 
-        // Зображення: дрібні (< 4 КБ) вбудовуються як data URI,
-        // більші — копіюються окремими файлами з хешем
         {
           test: /\.(png|jpe?g|gif|webp|avif|svg)$/i,
           type: 'asset',
@@ -60,7 +53,6 @@ module.exports = (env = {}, argv = {}) => {
           generator: { filename: `images/[name]${hash}[ext]` },
         },
 
-        // Локальні шрифти: завжди окремими файлами в dist/fonts
         {
           test: /\.(woff2?|ttf|otf|eot)$/i,
           type: 'asset/resource',
@@ -75,7 +67,7 @@ module.exports = (env = {}, argv = {}) => {
           new HtmlWebpackPlugin({
             template: `./src/pages/${name}.html`,
             filename: `${name}.html`,
-            chunks: [name], // на кожну сторінку — лише її скрипти
+            chunks: [name],
             minify: isProd,
           }),
       ),
@@ -92,14 +84,9 @@ module.exports = (env = {}, argv = {}) => {
         new TerserPlugin({ extractComments: false }),
         new CssMinimizerPlugin(),
       ],
-      // Tree-shaking: прибираємо невикористаний код бібліотек (lodash-es)
       usedExports: true,
       sideEffects: true,
-      // Код webpack-рантайму — окремим маленьким файлом,
-      // щоб хеші vendors/app не змінювались без потреби
       runtimeChunk: 'single',
-      // Зовнішні бібліотеки — окремий vendors-чанк, спільний для сторінок.
-      // Він рідко змінюється, тож довго живе в кеші браузера
       splitChunks: {
         chunks: 'all',
         cacheGroups: {
@@ -108,7 +95,6 @@ module.exports = (env = {}, argv = {}) => {
             name: 'vendors',
             priority: 10,
           },
-          // Спільні стилі обох сторінок — один файл styles.[hash].css
           styles: {
             type: 'css/mini-extract',
             name: 'styles',
@@ -116,7 +102,6 @@ module.exports = (env = {}, argv = {}) => {
             priority: 20,
             enforce: true,
           },
-          // Власний код, який використовують обидві сторінки (ui, cart-store, mock-data)
           common: {
             test: /[\\/]src[\\/]js[\\/]modules[\\/]/,
             minChunks: 2,
