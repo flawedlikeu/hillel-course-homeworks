@@ -1,0 +1,14 @@
+{
+  "name": "typescript-task",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hillel homework #19: TypeScript basics",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/main.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
